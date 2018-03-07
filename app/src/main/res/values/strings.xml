@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Quiz</string>
+    <string name="indian_culteural_quiz">Indian Cultural Quiz</string>
+    <string name="firstQuestion">1.The ratio of width of our National flag to its length is ?</string>
+    <string name="firstOptionOfQuestionOne">3:5</string>
+    <string name="secondOptionOfQuestionOne">2:3</string>
+    <string name="thirdOptionOfQuestionOne">2:4</string>
+    <string name="fourtOptionOfQuestionOne">3:4</string>
+    <string name="secondQuestion">2. Rabindranath Tagore\'s \'Jana Gana Mana\' has been adopted as India\'s National Anthem. How many stanzas of the said song were adopted ?</string>
+    <string name="firstoptionOfSecondQuestion">Only the first stanza</string>
+    <string name="secondOptionOfSecondQuestion">The whole song</string>
+    <string name="thirdOptionOfSecondQuestion">Third and Fourth stanza</string>
+    <string name="fourtOptionOfSecondQuestion">First and Second stanza</string>
+    <string name="thirdQuestion">3. Natya - Shastra the main source of India\'s classical dances was written by ?</string>
+    <string name="fourtOptionOfThirdQuestion">Tandu Muni</string>
+    <string name="thirdOptionOfThirdQuestion">Abhinav Gupt</string>
+    <string name="secondOptionOfThirddQuestion">Bharat Muni</string>
+    <string name="firstoptionOfThirdQuestion">Nara Muni</string>
+    <string name="fourthQuestion">4. \'Dandia\' is a popular dance of</string>
+    <string name="firstoptionOfFourthQuestion">Punjab</string>
+    <string name="secondOptionOfFourthQuestion">Gujarat</string>
+    <string name="thirdOptionOfFourthQuestion">Tamil Nadu</string>
+    <string name="fourtOptionOfFourthQuestion">Maharashtra</string>
+    <string name="fifthQuestion">5. The words \'Satyameva Jayate\' inscribed below the base plate of the emblem of India are taken from ?</string>
+    <string name="editTextHint">Please Wirte The Answer.</string>
+    <string name="sixthQuestion">6. Among the following who were the founder of Hindustan Socialist Republican Association ?</string>
+    <string name="bhagat_singh">Bhagat Singh</string>
+    <string name="ramPrasadBismil">Ram Prasad Bismil</string>
+    <string name="mahatmaGandhi">Mahatma Gandhi</string>
+    <string name="jawaharlalNehru">Jawaharlal Nehru</string>
+    <string name="submitButton">Submit</string>
+    <string name="india_falg">India Falg</string>
+    <string name="result">You Quiz Result is </string>
+    <string name="title_activity_main2">Main2Activity</string>
+</resources>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">प्रश्नोत्तरी</string>
+    <string name="indian_culteural_quiz">भारतीय सांस्कृतिक प्रश्नोत्तरी</string>
+    <string name="firstQuestion">१.हमारे राष्ट्रीय ध्वज की चौड़ाई का अनुपात इसकी लंबाई है? ?</string>
+    <string name="firstOptionOfQuestionOne">३:५</string>
+    <string name="secondOptionOfQuestionOne">२:३</string>
+    <string name="thirdOptionOfQuestionOne">२:४</string>
+    <string name="fourtOptionOfQuestionOne">३:४</string>
+    <string name="secondQuestion">२.रवींद्रनाथ टैगोर का \'जन गण मन\' भारत के राष्ट्रीय गान के रूप में अपनाया गया है। कहा गीत के कितने पदों को अपनाया गया? ?</string>
+    <string name="firstoptionOfSecondQuestion">केवल पहली पन्ने</string>
+    <string name="secondOptionOfSecondQuestion">पूरे गीत</string>
+    <string name="thirdOptionOfSecondQuestion">तीसरा और चौथा पन्ने</string>
+    <string name="fourtOptionOfSecondQuestion">पहला और दूसरा पन्ने</string>
+    <string name="ThirdQuestion">३. नाट्य - शास्त्री ने भारत के शास्त्रीय नृत्य का मुख्य स्रोत लिखा था ?</string>
+    <string name="fourtOptionOfThirdQuestion">तंदू मुनी</string>
+    <string name="thirdOptionOfThirdQuestion">अभिनव गुप्ता</string>
+    <string name="secondOptionOfThirddQuestion">भरत मुनी</string>
+    <string name="firstoptionOfThirdQuestion">नारा मुनी</string>
+    <string name="FourthQuestion">४. \'दांडिया \' एक लोकप्रिय नृत्य है ?</string>
+    <string name="firstoptionOfFourthQuestion">पंजाब</string>
+    <string name="secondOptionOfFourthQuestion">गुजरात</string>
+    <string name="thirdOptionOfFourthQuestion">तमिलनाडु</string>
+    <string name="fourtOptionOfFourthQuestion">महाराष्ट्र</string>
+    <string name="FifthQuestion">५. भारत के प्रतीक के आधार प्लेट के नीचे लिखा गया शब्द \'सत्यमेव जयते/' से लिया जाता है ?</string>
+    <string name="editTextHint">कृपया जवाब लिखें।</string>
+    <string name="sixthQuestion">6. निम्नलिखित में हिंदुस्तान सोशलिस्ट रिपब्लिकन एसोसिएशन के संस्थापक थे ?</string>
+    <string name="bhagat_singh">भगत सिंह</string>
+    <string name="ramPrasadBismil">राम प्रसाद बिस्मिल</string>
+    <string name="mahatmaGandhi">महात्मा गांधी</string>
+    <string name="jawaharlalNehru">जवाहरलाल नेहरू</string>
+    <string name="submitButton">जमा करें</string>
+    <string name="india_falg">भारत फाल्ग</string>
+    <string name="result">आप क्विज परिणाम है </string>
+</resources>
