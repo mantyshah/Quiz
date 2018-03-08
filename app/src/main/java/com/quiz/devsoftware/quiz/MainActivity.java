@@ -14,15 +14,6 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
-    /*Answers of Questions
-    * 1. B
-    * 2. A
-    * 3. B
-    * 4. B
-    * 5. Mundak Upanishad
-    * 6. A, B.
-    * */
-
     private RadioGroup firstQuestion, secondQuestion, thirdQuestion, fourthQuestion;
     private EditText fifthQuestionAnswer;
     private CheckBox sixthQuestionCheckBox1, sixthQuestionCheckBox2, sixthQuestionCheckBox3, sixthQuestionCheckBox4;
