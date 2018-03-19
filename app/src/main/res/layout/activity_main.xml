@@ -133,7 +133,7 @@
                         android:background="@drawable/red"
                         android:contentDescription="@string/wrong"
                         android:src="@mipmap/ic_close_black_48dp"
-                        android:visibility="visible" />
+                        android:visibility="invisible" />
 
                     <ImageView
                         android:id="@+id/rightAnsFirstQuestion"
@@ -147,7 +147,7 @@
                         android:background="@drawable/green"
                         android:contentDescription="@string/right"
                         android:src="@mipmap/ic_check_black_48dp"
-                        android:visibility="visible" />
+                        android:visibility="invisible" />
                 </RelativeLayout>
 
                 <TextView
@@ -229,7 +229,7 @@
                         android:background="@drawable/red"
                         android:contentDescription="@string/wrong"
                         android:src="@mipmap/ic_close_black_48dp"
-                        android:visibility="visible" />
+                        android:visibility="invisible" />
 
                     <ImageView
                         android:id="@+id/rightAnsSecondQuestion"
@@ -243,7 +243,7 @@
                         android:background="@drawable/green"
                         android:contentDescription="@string/right"
                         android:src="@mipmap/ic_check_black_48dp"
-                        android:visibility="visible" />
+                        android:visibility="invisible" />
 
 
                 </RelativeLayout>
@@ -259,6 +259,7 @@
                     android:textStyle="bold" />
 
                 <RelativeLayout
+                    android:id="@+id/thirdQuestionRelativeLayout"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
 
@@ -327,7 +328,7 @@
                         android:background="@drawable/red"
                         android:contentDescription="@string/wrong"
                         android:src="@mipmap/ic_close_black_48dp"
-                        android:visibility="visible" />
+                        android:visibility="invisible" />
 
                     <ImageView
                         android:id="@+id/rightAnsthirdQuestion"
@@ -341,7 +342,7 @@
                         android:background="@drawable/green"
                         android:contentDescription="@string/right"
                         android:src="@mipmap/ic_check_black_48dp"
-                        android:visibility="visible" />
+                        android:visibility="invisible" />
 
                 </RelativeLayout>
 
@@ -356,6 +357,7 @@
                     android:textStyle="bold" />
 
                 <RelativeLayout
+                    android:id="@+id/fourthQuestionRelativeLayout"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content">
 
@@ -423,7 +425,7 @@
                         android:background="@drawable/red"
                         android:contentDescription="@string/wrong"
                         android:src="@mipmap/ic_close_black_48dp"
-                        android:visibility="visible" />
+                        android:visibility="invisible" />
 
                     <ImageView
                         android:id="@+id/rightAnsFourthQuestion"
@@ -437,7 +439,7 @@
                         android:background="@drawable/green"
                         android:contentDescription="@string/right"
                         android:src="@mipmap/ic_check_black_48dp"
-                        android:visibility="visible" />
+                        android:visibility="invisible" />
                 </RelativeLayout>
 
                 <TextView
@@ -451,37 +453,41 @@
                     android:textStyle="bold" />
 
                 <RelativeLayout
+                    android:id="@+id/fifthQuestionRelativeLayout"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content">
-                <EditText
-                    android:id="@+id/fifthQuestionAnswer"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:hint="@string/editTextHint"
-                    android:textColor="@color/secondary_text"
-                    android:textSize="16sp"
-                    />
+
+                    <EditText
+                        android:id="@+id/fifthQuestionAnswer"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="@string/editTextHint"
+                        android:textColor="@color/secondary_text"
+                        android:textSize="16sp" />
+
                     <ImageView
                         android:id="@+id/wrongAnsFifthQuestion"
                         android:layout_width="wrap_content"
                         android:layout_height="30dp"
-                        android:src="@mipmap/ic_check_black_48dp"
-                        android:layout_marginStart="290dp"
                         android:layout_marginLeft="290dp"
+                        android:layout_marginStart="290dp"
                         android:background="@drawable/green"
                         android:contentDescription="@string/wrong"
-                        />
+                        android:src="@mipmap/ic_check_black_48dp"
+                        android:visibility="invisible" />
+
                     <ImageView
                         android:id="@+id/rightAnsFifthQuestion"
                         android:layout_width="wrap_content"
                         android:layout_height="30dp"
-                        android:src="@mipmap/ic_close_black_48dp"
-                        android:layout_marginStart="290dp"
                         android:layout_marginLeft="290dp"
+                        android:layout_marginStart="290dp"
                         android:background="@drawable/red"
                         android:contentDescription="@string/right"
-                        />
+                        android:src="@mipmap/ic_close_black_48dp"
+                        android:visibility="invisible" />
                 </RelativeLayout>
+
                 <TextView
                     android:id="@+id/sixthQuestion"
                     android:layout_width="match_parent"
@@ -492,47 +498,80 @@
                     android:textSize="18sp"
                     android:textStyle="bold" />
 
+                <RelativeLayout
+                    android:id="@+id/sixthQuestionRelativeLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
 
-                <CheckBox
-                    android:id="@+id/bhagatSingh"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:paddingLeft="24dp"
-                    android:paddingRight="0dp"
-                    android:text="@string/bhagat_singh"
-                    android:textAllCaps="true"
-                    android:textColor="@color/secondary_text"
-                    android:textSize="16sp" />
+                    <CheckBox
+                        android:id="@+id/bhagatSingh"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="24dp"
+                        android:paddingRight="0dp"
+                        android:text="@string/bhagat_singh"
+                        android:textAllCaps="true"
+                        android:textColor="@color/secondary_text"
+                        android:textSize="16sp" />
 
-                <CheckBox
-                    android:id="@+id/ramPrasadBismil"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:paddingLeft="24dp"
-                    android:text="@string/ramPrasadBismil"
-                    android:textAllCaps="true"
-                    android:textColor="@color/secondary_text"
-                    android:textSize="16sp" />
+                    <CheckBox
+                        android:id="@+id/ramPrasadBismil"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/bhagatSingh"
+                        android:paddingLeft="24dp"
+                        android:text="@string/ramPrasadBismil"
+                        android:textAllCaps="true"
+                        android:textColor="@color/secondary_text"
+                        android:textSize="16sp" />
 
-                <CheckBox
-                    android:id="@+id/mahatmaGandhi"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:paddingLeft="24dp"
-                    android:text="@string/mahatmaGandhi"
-                    android:textAllCaps="true"
-                    android:textColor="@color/secondary_text"
-                    android:textSize="16sp" />
+                    <CheckBox
+                        android:id="@+id/mahatmaGandhi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/ramPrasadBismil"
+                        android:paddingLeft="24dp"
+                        android:text="@string/mahatmaGandhi"
+                        android:textAllCaps="true"
+                        android:textColor="@color/secondary_text"
+                        android:textSize="16sp" />
 
-                <CheckBox
-                    android:id="@+id/jawaharlalNehru"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:paddingLeft="24dp"
-                    android:text="@string/jawaharlalNehru"
-                    android:textAllCaps="true"
-                    android:textColor="@color/secondary_text"
-                    android:textSize="16sp" />
+                    <CheckBox
+                        android:id="@+id/jawaharlalNehru"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/mahatmaGandhi"
+                        android:paddingLeft="24dp"
+                        android:text="@string/jawaharlalNehru"
+                        android:textAllCaps="true"
+                        android:textColor="@color/secondary_text"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:id="@+id/wrongAnsSixthQuestion"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="290dp"
+                        android:layout_marginStart="290dp"
+                        android:layout_marginTop="50dp"
+                        android:background="@drawable/green"
+                        android:contentDescription="@string/wrong"
+                        android:src="@mipmap/ic_check_black_48dp"
+                        android:visibility="invisible" />
+
+                    <ImageView
+                        android:id="@+id/rightAnswrongAnsSixthQuestionQuestion"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="290dp"
+                        android:layout_marginStart="290dp"
+                        android:layout_marginTop="50dp"
+                        android:background="@drawable/red"
+                        android:contentDescription="@string/right"
+                        android:src="@mipmap/ic_close_black_48dp"
+                        android:visibility="invisible" />
+
+                </RelativeLayout>
 
                 <Button
                     android:id="@+id/submitButton"
