@@ -8,6 +8,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.CheckBox;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Toast;
@@ -18,6 +19,7 @@ public class MainActivity extends AppCompatActivity {
     private EditText fifthQuestionAnswer;
     private CheckBox sixthQuestionCheckBox1, sixthQuestionCheckBox2, sixthQuestionCheckBox3, sixthQuestionCheckBox4;
     private RadioButton firstQuestionRadioButton, secondQuestionRadioButton, thirdQuestionRadioButton, fourthQuestionRadioButton ;
+    private ImageView wrongAnsFirstQuestion , rightAnsFirstQuestion, wrongAnsSecondQuestion, rightAnsSecondQuestion;
     private int totalScore = 0;
     int scoreFirstAnswer = 0;
     int scoreSecondAnswer = 0;
@@ -51,6 +53,10 @@ public class MainActivity extends AppCompatActivity {
         sixthQuestionCheckBox3 = (CheckBox) findViewById(R.id.mahatmaGandhi);
         sixthQuestionCheckBox4 = (CheckBox) findViewById(R.id.jawaharlalNehru);
         fifthQuestionAnswer = (EditText) findViewById(R.id.fifthQuestionAnswer);
+        wrongAnsFirstQuestion = (ImageView) findViewById(R.id.wrongAnsFirstQuestion);
+        wrongAnsSecondQuestion = (ImageView) findViewById(R.id.wrongAnsSecondQuestion);
+        rightAnsFirstQuestion = (ImageView) findViewById(R.id.rightAnsFirstQuestion);
+        rightAnsSecondQuestion = (ImageView) findViewById(R.id.rightAnsSecondQuestion);
     }
     private void questionOneAns() {
         final String ANSWER1 = "2:3";
@@ -137,6 +143,22 @@ public class MainActivity extends AppCompatActivity {
         }
     }
     private void totalScore(){
+        totalScore = 0;
+        if(scoreFirstAnswer != 0)
+        {
+            rightAnsFirstQuestion.setVisibility(View.VISIBLE);
+        }
+        else
+        {
+            wrongAnsFirstQuestion.setVisibility(View.VISIBLE);
+        }
+        if(scoreSecondAnswer != 0)
+        {
+            rightAnsSecondQuestion.setVisibility(View.VISIBLE);
+        }
+        else{
+            wrongAnsSecondQuestion.setVisibility(View.VISIBLE);
+        }
 
        totalScore = scoreFirstAnswer + scoreSecondAnswer + scoreThirdAnswer + scoreFourthAnswer + scorefifthAnswer + scoreSixthAnswer;
 

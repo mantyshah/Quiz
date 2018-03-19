@@ -31,4 +31,6 @@
     <string name="submitButton">Submit</string>
     <string name="india_falg">India Falg</string>
     <string name="result">You Quiz Result is </string>
+    <string name="right">Right Icon</string>
+    <string name="wrong">Wrong Icon</string>
 </resources>
