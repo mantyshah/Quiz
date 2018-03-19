@@ -19,13 +19,14 @@ public class MainActivity extends AppCompatActivity {
     private EditText fifthQuestionAnswer;
     private CheckBox sixthQuestionCheckBox1, sixthQuestionCheckBox2, sixthQuestionCheckBox3, sixthQuestionCheckBox4;
     private RadioButton firstQuestionRadioButton, secondQuestionRadioButton, thirdQuestionRadioButton, fourthQuestionRadioButton ;
-    private ImageView wrongAnsFirstQuestion , rightAnsFirstQuestion, wrongAnsSecondQuestion, rightAnsSecondQuestion;
+    private ImageView wrongAnsFirstQuestion , rightAnsFirstQuestion, wrongAnsSecondQuestion, rightAnsSecondQuestion, wrongAnsThirdQuestion, rightAnsThirdQuestion,
+            rightAnsFourthQuestion, wrongAnsFourthQuestion, rightAnsFifthQuestion, wrongAnsFifthQuestion, rightAnsSixthQuestion, wrongAnsSixthQuestion;
     private int totalScore = 0;
     int scoreFirstAnswer = 0;
     int scoreSecondAnswer = 0;
     int scoreThirdAnswer = 0;
     int scoreFourthAnswer = 0;
-    int scorefifthAnswer = 0;
+    int scoreFifthAnswer = 0;
     int scoreSixthAnswer = 0;
 
 
@@ -57,6 +58,14 @@ public class MainActivity extends AppCompatActivity {
         wrongAnsSecondQuestion = (ImageView) findViewById(R.id.wrongAnsSecondQuestion);
         rightAnsFirstQuestion = (ImageView) findViewById(R.id.rightAnsFirstQuestion);
         rightAnsSecondQuestion = (ImageView) findViewById(R.id.rightAnsSecondQuestion);
+        wrongAnsThirdQuestion = (ImageView) findViewById(R.id.wrongAnsThirdQuestion);
+        rightAnsThirdQuestion = (ImageView) findViewById(R.id.rightAnsThirdQuestion);
+        wrongAnsFourthQuestion = (ImageView) findViewById(R.id.wrongAnsFourthQuestion);
+        rightAnsFourthQuestion = (ImageView) findViewById(R.id.rightAnsFourthQuestion);
+        wrongAnsFifthQuestion = (ImageView) findViewById(R.id.wrongAnsFifthQuestion);
+        rightAnsFifthQuestion = (ImageView) findViewById(R.id.rightAnsFifthQuestion);
+        wrongAnsSixthQuestion = (ImageView) findViewById(R.id.wrongAnsSixthQuestion);
+        rightAnsSixthQuestion = (ImageView) findViewById(R.id.rightAnsSixthQuestion);
     }
     private void questionOneAns() {
         final String ANSWER1 = "2:3";
@@ -128,11 +137,11 @@ public class MainActivity extends AppCompatActivity {
         );
     }
     private void questionFiveAns() {
-        scorefifthAnswer = 0;
+        scoreFifthAnswer = 0;
         String answer5 = "mundak upanishad";
         if(fifthQuestionAnswer.getText().toString().equals(answer5))
         {
-            scorefifthAnswer = 1;
+            scoreFifthAnswer = 1;
         }
     }
     private void questionSixthAns(){
@@ -144,23 +153,32 @@ public class MainActivity extends AppCompatActivity {
     }
     private void totalScore(){
         totalScore = 0;
-        if(scoreFirstAnswer != 0)
-        {
+        if(scoreFirstAnswer != 0) {
             rightAnsFirstQuestion.setVisibility(View.VISIBLE);
-        }
-        else
-        {
+        } else {
             wrongAnsFirstQuestion.setVisibility(View.VISIBLE);
-        }
-        if(scoreSecondAnswer != 0)
-        {
+        }if(scoreSecondAnswer != 0) {
             rightAnsSecondQuestion.setVisibility(View.VISIBLE);
-        }
-        else{
+        } else{
             wrongAnsSecondQuestion.setVisibility(View.VISIBLE);
+        }if(scoreThirdAnswer != 0) {
+            rightAnsThirdQuestion.setVisibility(View.VISIBLE);
+        } else {
+            wrongAnsThirdQuestion.setVisibility(View.VISIBLE);
+        }if(scoreFourthAnswer != 0){
+            rightAnsFourthQuestion.setVisibility(View.VISIBLE);
+        }else{
+            wrongAnsFourthQuestion.setVisibility(View.VISIBLE);
+        }if(scoreFifthAnswer != 0){
+            rightAnsFifthQuestion.setVisibility(View.VISIBLE);
+        }else{
+            wrongAnsFifthQuestion.setVisibility(View.VISIBLE);
+        }if(scoreSixthAnswer != 0){
+            rightAnsSixthQuestion.setVisibility(View.VISIBLE);
+        }else{
+            wrongAnsSixthQuestion.setVisibility(View.VISIBLE);
         }
-
-       totalScore = scoreFirstAnswer + scoreSecondAnswer + scoreThirdAnswer + scoreFourthAnswer + scorefifthAnswer + scoreSixthAnswer;
+       totalScore = scoreFirstAnswer + scoreSecondAnswer + scoreThirdAnswer + scoreFourthAnswer + scoreFifthAnswer + scoreSixthAnswer;
 
     }
 
