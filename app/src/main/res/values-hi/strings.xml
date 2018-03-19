@@ -17,12 +17,10 @@
     <string name="thirdOptionOfThirdQuestion">अभिनव गुप्ता</string>
     <string name="secondOptionOfThirddQuestion">भरत मुनी</string>
     <string name="firstoptionOfThirdQuestion">नारा मुनी</string>
-    <string name="FourthQuestion">४. \'दांडिया \' एक लोकप्रिय नृत्य है ?</string>
     <string name="firstoptionOfFourthQuestion">पंजाब</string>
     <string name="secondOptionOfFourthQuestion">गुजरात</string>
     <string name="thirdOptionOfFourthQuestion">तमिलनाडु</string>
     <string name="fourtOptionOfFourthQuestion">महाराष्ट्र</string>
-    <string name="FifthQuestion">५. भारत के प्रतीक के आधार प्लेट के नीचे लिखा गया शब्द \'सत्यमेव जयते/' से लिया जाता है ?</string>
     <string name="editTextHint">कृपया जवाब लिखें।</string>
     <string name="sixthQuestion">6. निम्नलिखित में हिंदुस्तान सोशलिस्ट रिपब्लिकन एसोसिएशन के संस्थापक थे ?</string>
     <string name="bhagat_singh">भगत सिंह</string>
@@ -32,4 +30,7 @@
     <string name="submitButton">जमा करें</string>
     <string name="india_falg">भारत फाल्ग</string>
     <string name="result">आप क्विज परिणाम है </string>
+    <string name="fifthQuestion">५. भारत के प्रतीक के आधार प्लेट के नीचे लिखा गया शब्द \\\'सत्यमेव जयते/\' से लिया जाता है ?</string>
+    <string name="fourthQuestion">४. \'दांडिया \' एक लोकप्रिय नृत्य है ?</string>
+    <string name="thirdQuestion">३. नाट्य - शास्त्री ने भारत के शास्त्रीय नृत्य का मुख्य स्रोत लिखा था ?</string>
 </resources>
