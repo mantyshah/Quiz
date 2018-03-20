@@ -584,6 +584,7 @@
                     android:layout_height="wrap_content"
                     android:onClick="quizScore"
                     android:text="@string/submitButton"
+                    android:layout_marginTop="15dp"
                     android:textAllCaps="true"
                     android:textColor="#2196f3"
                     android:textSize="20sp"
