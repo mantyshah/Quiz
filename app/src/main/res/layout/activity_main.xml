@@ -502,7 +502,9 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:paddingLeft="24dp"
+                        android:paddingStart="24dp"
                         android:paddingRight="0dp"
+                        android:paddingEnd="0dp"
                         android:text="@string/bhagat_singh"
                         android:textAllCaps="true"
                         android:textColor="@color/secondary_text"
@@ -514,6 +516,9 @@
                         android:layout_height="wrap_content"
                         android:layout_below="@id/bhagatSingh"
                         android:paddingLeft="24dp"
+                        android:paddingStart="24dp"
+                        android:paddingRight="0dp"
+                        android:paddingEnd="0dp"
                         android:text="@string/ramPrasadBismil"
                         android:textAllCaps="true"
                         android:textColor="@color/secondary_text"
@@ -525,6 +530,9 @@
                         android:layout_height="wrap_content"
                         android:layout_below="@id/ramPrasadBismil"
                         android:paddingLeft="24dp"
+                        android:paddingStart="24dp"
+                        android:paddingRight="0dp"
+                        android:paddingEnd="0dp"
                         android:text="@string/mahatmaGandhi"
                         android:textAllCaps="true"
                         android:textColor="@color/secondary_text"
@@ -536,6 +544,9 @@
                         android:layout_height="wrap_content"
                         android:layout_below="@id/mahatmaGandhi"
                         android:paddingLeft="24dp"
+                        android:paddingStart="24dp"
+                        android:paddingRight="0dp"
+                        android:paddingEnd="0dp"
                         android:text="@string/jawaharlalNehru"
                         android:textAllCaps="true"
                         android:textColor="@color/secondary_text"
@@ -548,7 +559,7 @@
                         android:layout_marginLeft="290dp"
                         android:layout_marginStart="280dp"
                         android:layout_marginTop="50dp"
-                        android:background="@drawable/green"
+                        android:background="@drawable/red"
                         android:contentDescription="@string/wrong"
                         android:src="@mipmap/ic_close_black_48dp"
                         android:visibility="invisible" />
@@ -577,7 +588,7 @@
                     android:textColor="#2196f3"
                     android:textSize="20sp"
                     android:textStyle="bold"
-                    android:background="#4caf50"/>
+                    android:background="@drawable/buttonbackground"/>
             </LinearLayout>
 
         </LinearLayout>
