@@ -34,11 +34,11 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        declaringViews();
-        questionOneAns();
-        questionTwoAns();
-        questionThreeAns();
-        questionFourthAns();
+        declaringViews();   //  Declares all the views in the application
+        questionOneAns();   //  Calls the setOnCheckedChangeListener for the first question radioGroup
+        questionTwoAns();   //  Calls the setOnCheckedChangeListener for the second question radioGroup
+        questionThirdAns(); //  Calls the setOnCheckedChangeListener for the third question radioGroup
+        questionFourthAns(); // Calls the setOnCheckedChangeListener for the third question radioGroup
 
 
     }
@@ -75,7 +75,7 @@ public class MainActivity extends AppCompatActivity {
                     @Override
                     public void onCheckedChanged(RadioGroup radioGroup, int checkedId) {
                         firstQuestionRadioButton =(RadioButton) findViewById(checkedId);
-                        String firstQuestionAnswer = firstQuestionRadioButton.getText().toString();
+                        String firstQuestionAnswer = firstQuestionRadioButton.getText().toString(); //Gets the text of the checked radioButton ID
                         if(firstQuestionAnswer.equals(ANSWER1)) {
                             scoreFirstAnswer = 1;
                         }
@@ -91,7 +91,7 @@ public class MainActivity extends AppCompatActivity {
                     @Override
                     public void onCheckedChanged(RadioGroup radioGroup, int checkedId) {
                         secondQuestionRadioButton =(RadioButton) findViewById(checkedId);
-                        String secondQuestionAnswer = secondQuestionRadioButton.getText().toString();
+                        String secondQuestionAnswer = secondQuestionRadioButton.getText().toString();   //Gets the text of the checked radioButton ID
 
                         if(secondQuestionAnswer.equals(ANSWER2))
                         {
@@ -102,7 +102,7 @@ public class MainActivity extends AppCompatActivity {
         );
 
     }
-    private void questionThreeAns() {
+    private void questionThirdAns() {
         scoreThirdAnswer = 0;
         final String ANSWER3 = "Abhinav Gupt";
         thirdQuestion.setOnCheckedChangeListener(
@@ -110,7 +110,7 @@ public class MainActivity extends AppCompatActivity {
                     @Override
                     public void onCheckedChanged(RadioGroup radioGroup, int checkedId) {
                         thirdQuestionRadioButton =(RadioButton) findViewById(checkedId);
-                        String thirdQuestionAnswer = thirdQuestionRadioButton.getText().toString();
+                        String thirdQuestionAnswer = thirdQuestionRadioButton.getText().toString(); //Gets the text of the checked radioButton ID
 
                         if(thirdQuestionAnswer.equals(ANSWER3)) {
                             scoreThirdAnswer = 1;
@@ -127,7 +127,7 @@ public class MainActivity extends AppCompatActivity {
                     @Override
                     public void onCheckedChanged(RadioGroup radioGroup, int checkedId) {
                         fourthQuestionRadioButton =(RadioButton) findViewById(checkedId);
-                        String fourthQuestionAnswer = fourthQuestionRadioButton.getText().toString();
+                        String fourthQuestionAnswer = fourthQuestionRadioButton.getText().toString();   //Gets the text of the checked radioButton ID
 
                         if(fourthQuestionAnswer.equals(ANSWER4)) {
                             scoreFourthAnswer = 1;
@@ -139,14 +139,14 @@ public class MainActivity extends AppCompatActivity {
     private void questionFiveAns() {
         scoreFifthAnswer = 0;
         String answer5 = "mundak upanishad";
-        if(fifthQuestionAnswer.getText().toString().equals(answer5))
+        if(fifthQuestionAnswer.getText().toString().equals(answer5))    //Compares the text written in editText with answer.
         {
             scoreFifthAnswer = 1;
         }
     }
     private void questionSixthAns(){
         scoreSixthAnswer = 0;
-        if(sixthQuestionCheckBox1.isChecked() && sixthQuestionCheckBox2.isChecked())
+        if(sixthQuestionCheckBox1.isChecked() && sixthQuestionCheckBox2.isChecked())    // Checks if both checkBox are checked or not
         {
             scoreSixthAnswer = 1;
         }
@@ -178,7 +178,7 @@ public class MainActivity extends AppCompatActivity {
         }else{
             wrongAnsSixthQuestion.setVisibility(View.VISIBLE);
         }
-       totalScore = scoreFirstAnswer + scoreSecondAnswer + scoreThirdAnswer + scoreFourthAnswer + scoreFifthAnswer + scoreSixthAnswer;
+       totalScore = scoreFirstAnswer + scoreSecondAnswer + scoreThirdAnswer + scoreFourthAnswer + scoreFifthAnswer + scoreSixthAnswer; // Calculates the total score.
 
     }
 
@@ -187,7 +187,7 @@ public class MainActivity extends AppCompatActivity {
         questionFiveAns();
         questionSixthAns();
         totalScore();
-        Toast.makeText(MainActivity.this, getString(R.string.result) + " " + totalScore, Toast.LENGTH_LONG).show();
+        Toast.makeText(MainActivity.this, getString(R.string.result) + " " + totalScore, Toast.LENGTH_LONG).show(); //Shows the final score.
     }
 
 }

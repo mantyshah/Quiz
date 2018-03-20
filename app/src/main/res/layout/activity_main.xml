@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.quiz.devsoftware.quiz.MainActivity">
+    tools:context="com.quiz.devsoftware.quiz.MainActivity"
+    >
 
 
     <ScrollView
@@ -30,14 +31,7 @@
                 android:id="@+id/relativeLayoutHeader"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
-                android:layout_marginEnd="8dp"
-                android:layout_marginStart="8dp"
-                android:layout_marginTop="8dp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent">
+                android:layout_marginTop="10dp">
 
                 <TextView
                     android:id="@+id/headingTextView"
@@ -470,7 +464,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="30dp"
                         android:layout_marginLeft="290dp"
-                        android:layout_marginStart="290dp"
+                        android:layout_marginStart="280dp"
                         android:background="@drawable/red"
                         android:contentDescription="@string/wrong"
                         android:src="@mipmap/ic_close_black_48dp"
@@ -480,8 +474,8 @@
                         android:id="@+id/rightAnsFifthQuestion"
                         android:layout_width="wrap_content"
                         android:layout_height="30dp"
-                        android:layout_marginLeft="290dp"
-                        android:layout_marginStart="290dp"
+                        android:layout_marginLeft="280dp"
+                        android:layout_marginStart="280dp"
                         android:background="@drawable/red"
                         android:contentDescription="@string/right"
                         android:src="@mipmap/ic_close_black_48dp"
@@ -552,11 +546,11 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="290dp"
-                        android:layout_marginStart="290dp"
+                        android:layout_marginStart="280dp"
                         android:layout_marginTop="50dp"
                         android:background="@drawable/green"
                         android:contentDescription="@string/wrong"
-                        android:src="@mipmap/ic_check_black_48dp"
+                        android:src="@mipmap/ic_close_black_48dp"
                         android:visibility="invisible" />
 
                     <ImageView
@@ -564,11 +558,11 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="290dp"
-                        android:layout_marginStart="290dp"
+                        android:layout_marginStart="280dp"
                         android:layout_marginTop="50dp"
-                        android:background="@drawable/red"
+                        android:background="@drawable/green"
                         android:contentDescription="@string/right"
-                        android:src="@mipmap/ic_close_black_48dp"
+                        android:src="@mipmap/ic_check_black_48dp"
                         android:visibility="invisible" />
 
                 </RelativeLayout>
@@ -580,8 +574,10 @@
                     android:onClick="quizScore"
                     android:text="@string/submitButton"
                     android:textAllCaps="true"
-                    android:textColor="@color/primary_text"
-                    android:textSize="20sp" />
+                    android:textColor="#2196f3"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:background="#4caf50"/>
             </LinearLayout>
 
         </LinearLayout>
